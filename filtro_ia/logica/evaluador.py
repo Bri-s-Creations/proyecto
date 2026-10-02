@@ -20,6 +20,7 @@ from .datos import (
     InfraccionEtica,
     NivelSeveridad,
     ResultadoVerificacion,
+    TipoInfraccion,
 )
 
 
