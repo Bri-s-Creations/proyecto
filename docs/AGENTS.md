@@ -5,7 +5,7 @@ Esta regla es de cumplimiento obligatorio en cada interacción con el usuario en
 ## Protocolo de Registro Automático en `bitacora_de_estudio.md`
 
 En **cada respuesta o indicación del usuario**:
-1. **Actualizar la Bitácora**: Se debe registrar la interacción en el archivo [`bitacora_de_estudio.md`](file:///c:/Users/bh324/OneDrive/Datos%20adjuntos/Programaci%C3%B2n%20funcional/bitacora_de_estudio.md).
+1. **Actualizar la Bitácora**: Se debe registrar la interacción en el archivo [`docs/bitacora_de_estudio.md`](file:///c:/Users/bh324/OneDrive/Datos%20adjuntos/Programaci%C3%B2n%20funcional/docs/bitacora_de_estudio.md).
 2. **Estructura de cada Registro**:
    - **Timestamp**: Fecha y hora exacta de la indicación (ej. `YYYY-MM-DD HH:MM:SS [Zona Horaria]`).
    - **Indicación / Prompt del Usuario**: La solicitud o pregunta tal como la formuló el estudiante.

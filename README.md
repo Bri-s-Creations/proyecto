@@ -24,21 +24,48 @@ Programación funcional/
 │   └── skills/
 │       └── bitacora-estudio/
 │           └── SKILL.md              # Skill de tracking de aprendizaje
-├── data/                             # Base de conocimiento y datos de referencia (Ground Truth)
-│   └── hechos.py                     # Hechos verificados (FIME, UdeC, materia, profesor, etc.)
-├── filtro_ia/                         # Paquete principal del filtro funcional
-│   ├── __init__.py                   # Inicializador del paquete
+├── backend/                          # Servicios del Backend (FastAPI)
+│   ├── main.py                       # Servidor y API REST (/evaluar)
+│   └── hechos.py                     # Base de hechos verificados (Ground Truth local)
+├── frontend/                         # Aplicación de Interfaz de Usuario (Streamlit)
+│   └── app.py                        # UI interactiva y cliente HTTP de TrueShield
+├── filtro_ia/                        # Paquete principal del filtro funcional
+│   ├── __init__.py                   # Interfaz pública del paquete
 │   └── logica/                       # Lógica pura del sistema
-│       ├── __init__.py               # Exportación de componentes lógicos
+│       ├── __init__.py               # Marcador limpio de subpaquete
 │       ├── datos.py                  # Modelos de dominio inmutables (Asercion, DictamenFinal, etc.)
 │       └── evaluador.py              # Motor funcional de evaluación y pattern matching
-├── AGENTS.md                         # Reglas obligatorias de asistencia y registro
-├── bitacora_de_estudio.md            # Registro cronológico del progreso y metacognición
-├── Correccion_de_Alucinaciones.md    # Especificación conceptual y técnica del proyecto
-├── guia_semanal_unidad1.md           # Guía de estudio y ejercicios de la Unidad I
-├── planeacion-docente.md             # Planeación del curso de Programación Funcional
+├── docs/                             # Documentación centralizada y material de soporte
+│   ├── AGENTS.md                     # Reglas obligatorias de asistencia y bitácora
+│   ├── bitacora_de_estudio.md        # Registro cronológico del progreso y metacognición
+│   ├── Correccion_de_Alucinaciones.md# Especificación conceptual y técnica del proyecto
+│   ├── guia_semanal_unidad1.md       # Guía de estudio y ejercicios de la Unidad I
+│   ├── planeacion-docente.md         # Planeación del curso de Programación Funcional
+│   ├── Corrección de Alucinaciones en Modelos de Lenguaje.docx
+│   └── MATA LOPEZ WALTER ALEXANDER - PROGRAMACIÃ_N FUNCIONAL.pdf
+├── .gitignore                        # Reglas de exclusión de Git
 └── README.md                         # Descripción general y mapa de la arquitectura
 ```
+
+---
+
+## 🚀 Ejecución de Servicios
+
+### 1. Backend (FastAPI / Uvicorn)
+Desde el directorio `/backend`:
+```bash
+cd backend
+uvicorn main:app --reload
+```
+El servidor quedará disponible en `http://127.0.0.1:8000`.
+
+### 2. Frontend (Streamlit)
+Desde el directorio `/frontend`:
+```bash
+cd frontend
+streamlit run app.py
+```
+La interfaz se abrirá automáticamente en tu navegador web (por defecto en `http://localhost:8501`).
 
 ---
 

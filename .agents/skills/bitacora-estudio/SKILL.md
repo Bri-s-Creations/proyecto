@@ -25,7 +25,7 @@ Cada vez que el estudiante envíe una indicación o solicitud:
 2. **Procesar la Solicitud y Generar la Respuesta**:
    - Responder al estudiante con claridad, rigor conceptual, ejemplos funcionales en Python y recursos didácticos de alta calidad.
 
-3. **Registrar la Entrada en [`bitacora_de_estudio.md`](file:///c:/Users/bh324/OneDrive/Datos%20adjuntos/Programaci%C3%B2n%20funcional/bitacora_de_estudio.md)**:
+3. **Registrar la Entrada en [`docs/bitacora_de_estudio.md`](file:///c:/Users/bh324/OneDrive/Datos%20adjuntos/Programaci%C3%B2n%20funcional/docs/bitacora_de_estudio.md)**:
    - Añadir una nueva sección de entrada siguiendo la plantilla estándar.
 
 ---
